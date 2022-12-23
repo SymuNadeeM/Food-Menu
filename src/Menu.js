@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Menu = ({item}) => {
     return (
-        <div className="section center">
+        <div className="section">
+           
             {
                 item.map((menuitems)=>{
                     const {id,title,price,img,desc} =menuitems;
@@ -18,6 +19,7 @@ const Menu = ({item}) => {
                     </article>
                 })
             }
+            
             
         </div>
     )
